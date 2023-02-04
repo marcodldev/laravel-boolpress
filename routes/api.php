@@ -24,8 +24,17 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::namespace('Api')->prefix('/posts')->group(function(){
 
  Route::get('/', 'PostController@index');
-
  Route::get('/{id}', 'PostController@show');
 
 });
+
+//localhost:8000/api/tags
+
+Route::namespace('Api')->prefix('/tags')->group(function(){
+
+    Route::get('/', 'TagsController@index');
+    //localhost:8000/api/tags/carne es
+    Route::get('/{name}', 'TagsController@show');
+
+   });
 

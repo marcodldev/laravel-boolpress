@@ -25,6 +25,9 @@
               <li class="nav-item">
                 <router-link class="nav-link"  :to="{ name: 'about-us'}">About Us</router-link>
               </li>
+              <li class="nav-item">
+                <router-link class="nav-link"  :to="{ name: 'tags'}">Tags</router-link>
+              </li>
             </ul>
           </div>
         </div>
